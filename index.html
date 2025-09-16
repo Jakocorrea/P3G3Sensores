@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monitor de Gases</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Fuente opcional -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Monitor de Gases</h1>
+    <div class="status">
+      <span id="wsDot" class="dot gray"></span>
+      <span id="wsText">Desconectado</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Estado de Sensores</h2>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Registro en vivo</h2>
+      <div id="log" class="log"></div>
+    </section>
+  </main>
+
+  <!-- Configuración del proyecto (URL/KEY/sensores) -->
+  <script src="config.js"></script>
+
+  <!-- Supabase JS (ESM) -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

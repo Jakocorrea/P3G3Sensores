@@ -1,0 +1,31 @@
+:root{
+  --bg:#0b0e14; --panel:#121826; --panel-2:#0f1523; --text:#e6eaf2; --muted:#9aa3b2;
+  --ok:#16a34a; --warn:#f59e0b; --err:#ef4444; --accent:#60a5fa;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;background:linear-gradient(90deg,var(--panel),var(--panel-2));border-bottom:1px solid #1f2937}
+.topbar h1{margin:0;font-size:20px}
+.status{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:14px}
+.dot{width:10px;height:10px;border-radius:50%}
+.gray{background:#6b7280} .green{background:var(--ok)} .red{background:var(--err)}
+.container{max-width:1100px;margin:24px auto;padding:0 16px;display:grid;grid-template-columns:1fr;gap:24px}
+.panel{background:var(--panel);border:1px solid #1f2937;border-radius:14px;padding:16px}
+.panel h2{margin:0 0 12px 0;font-size:16px;color:#cbd5e1}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.card{background:var(--panel-2);border:1px solid #1f2937;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.cardHead{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.sName{font-weight:600}
+.badge{font-size:12px;padding:3px 8px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;background:#0b1220}
+.badge.ok{border-color:#14532d;color:#bbf7d0}
+.badge.warn{border-color:#7c2d12;color:#fed7aa}
+.badge.err{border-color:#5f1d1d;color:#fecaca}
+.value{font-size:28px;line-height:1.1}
+.meta{font-size:12px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+.meta .dot{width:8px;height:8px}
+
+.log{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#0a1020;border-radius:8px;padding:12px;max-height:240px;overflow:auto;border:1px solid #1f2937}
+.log p{margin:0 0 6px 0;color:#cbd5e1;font-size:12px;white-space:pre-wrap}
+.highlight{color:var(--accent)}
