@@ -1,6 +1,6 @@
 // ⚠️ Reemplaza estos valores por los de TU proyecto Supabase:
 window.CONFIG = {
-  SUPABASE_URL: "https://P3G3sensores.co",
+  SUPABASE_URL: "https://P3G3sensores.SUPABASE.co",
   SUPABASE_ANON_KEY: "TU_ANON_KEY",
 
   // Sensores a monitorear (el id DEBE coincidir con 'sensor' en la tabla)
